@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+.main-container {
+    background-color: rgb(28, 142, 218);
+    padding: 20px;
+}

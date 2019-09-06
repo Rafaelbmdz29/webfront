@@ -1,20 +1,28 @@
-import { NgModule, Component } from "@angular/core";
-import {Routes,RouterModule} from "@angular/router";
+import { NgModule} from "@angular/core";
+import {Routes, RouterModule} from "@angular/router";
 import { LoginComponent } from './login/login.component';
-export const routes:Routes=[{
+import { ThemeComponent } from './theme/theme.component';
+export const routes:Routes = [{
 
     path:'login',
     component:LoginComponent
 
-}]
+},
+{
+    path: 'pages',
+    component: ThemeComponent,
+    children: [
+        {
+        path: '',
+        loadChildren:'./pages/dashboard/dashboard.module#DashboardModule'
+    }
+]
+}
+]
 
 @NgModule({
-    imports:[RouterModule.forRoot(routes,{useHash:true})],
+    imports:[RouterModule.forRoot(routes, {useHash:true})],
     exports:[RouterModule],
-    providers:[]
+    providers:[]})
 
-})
-export class AppRoutingModule {
-
-
-}
+export class AppRoutingModule {}
