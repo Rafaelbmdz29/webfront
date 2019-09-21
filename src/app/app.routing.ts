@@ -11,11 +11,10 @@ import { CategoriesComponent } from './pages/setting/categories/categories.compo
 import { SectionsComponent } from './pages/setting/sections/sections.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
-export const routes:Routes = [{
-
-    path:'login',
-    component:LoginComponent
-
+export const routes: Routes = [
+  {
+    path: 'login',
+    component: LoginComponent
 },
 
 {
@@ -25,13 +24,13 @@ export const routes:Routes = [{
     {
     path: 'sections',
     component: SectionsComponent
-    },    
+    },
     {
     path: 'categories',
     component: CategoriesComponent
     },
     {
-    path:'books',
+    path: 'books',
     component: BooksComponent
     },
     {
@@ -51,20 +50,24 @@ export const routes:Routes = [{
     component: DashboardComponent
     },
     {
-    path:'users',
+    path: 'users',
     component: UsersComponent
     },
     {
+    path: 'biblioteca',
+    loadChildren: './pages/biblioteca/biblioteca.module#BibliotecaModule'
+    },
+    {
     path: '',
-    loadChildren:'./pages/dashboard/dashboard.module#DashboardModule'
+    loadChildren: './pages/dashboard/dashboard.module#DashboardModule'
     }
 ]
 }
-]
+];
 
 @NgModule({
-    imports:[RouterModule.forRoot(routes, {useHash:true})],
-    exports:[RouterModule],
-    providers:[]})
+    imports: [RouterModule.forRoot(routes, {useHash: true})],
+    exports: [RouterModule],
+    providers: []})
 
 export class AppRoutingModule {}
