@@ -3,9 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 import {EditorialComponent} from './editorial/editorial.component';
 import {AutoresComponent} from './autores/autores.component';
 import {TipoComponent} from './tipo/tipo.component';
-import {AreasComponent} from '../setting/areas/areas.component';
 import {LibroComponent} from './libro/libro.component';
 import {ExistenciaComponent} from './existencia/existencia.component';
+import {AreasComponent} from './areas/areas.component';
 
 
 const routes: Routes = [
@@ -13,8 +13,7 @@ const routes: Routes = [
     path: 'editorial',
     component: EditorialComponent
   },
-  {
-    path: 'autores',
+  {path: 'autores',
     component: AutoresComponent
   },
   {

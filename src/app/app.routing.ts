@@ -14,14 +14,14 @@ export const routes: Routes = [
     children: [
       {
         path: 'administracion',
-        loadChildren: './pages/administration/administration.module#AdministrationModule'
+        loadChildren: './pages/administracion/administracion.module#AdministracionModule'
       },
     {
     path: 'setting',
     loadChildren: './pages/setting/setting.module#SettingModule'
     },
       {
-        path: 'Biblioteca',
+        path: 'biblioteca',
         loadChildren: './pages/biblioteca/biblioteca.module#BibliotecaModule'
       },
     {

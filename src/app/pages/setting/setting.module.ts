@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { SettingRoutingModule } from './setting-routing.module';
-import { SettingComponent } from './setting.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { AuthorsComponent } from './authors/authors.component';
 import { AreasComponent } from './areas/areas.component';
@@ -11,7 +10,7 @@ import { BooksComponent } from './books/books.component';
 
 
 @NgModule({
-  declarations: [SettingComponent, CategoriesComponent, AuthorsComponent, AreasComponent, SectionsComponent, BooksComponent],
+  declarations: [CategoriesComponent, AuthorsComponent, AreasComponent, SectionsComponent, BooksComponent],
   imports: [
     CommonModule,
     SettingRoutingModule
