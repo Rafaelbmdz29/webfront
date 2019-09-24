@@ -1,39 +1,34 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {EditorialComponent} from './editorial/editorial.component';
+import {AreaComponent} from './area/area.component';
 import {AutoresComponent} from './autores/autores.component';
-import {TipoComponent} from './tipo/tipo.component';
+import {ExistenciasComponent} from './existencias/existencias.component';
 import {LibroComponent} from './libro/libro.component';
-import {ExistenciaComponent} from './existencia/existencia.component';
-import {AreasComponent} from './areas/areas.component';
+import {TipoComponent} from './tipo/tipo.component';
 
 
 const routes: Routes = [
   {
-    path: 'editorial',
-    component: EditorialComponent
+    path: 'area',
+    component: AreaComponent
   },
-  {path: 'autores',
+  {
+    path: 'autores',
     component: AutoresComponent
   },
   {
-    path: 'tipo',
-    component: TipoComponent
-  },
-  {
-    path: 'areas',
-    component: AreasComponent
+    path: 'existencia',
+    component: ExistenciasComponent
   },
   {
     path: 'libro',
     component: LibroComponent
   },
   {
-    path: 'existencia',
-    component: ExistenciaComponent
+    path: 'tipo',
+    component: TipoComponent
   }
 ];
-
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]

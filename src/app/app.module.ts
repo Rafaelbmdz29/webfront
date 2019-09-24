@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app.routing';
 import { ThemeComponent } from './theme/theme.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import {AdministracionComponent} from './pages/administracion/administracion.component';
-import {BibliotecaComponent} from './pages/biblioteca/biblioteca.component';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import {BibliotecaComponent} from './pages/biblioteca/biblioteca.component';
     ThemeComponent,
     DashboardComponent,
     AdministracionComponent,
-    BibliotecaComponent
+
   ],
   imports: [
     BrowserModule,
